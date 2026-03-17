@@ -43,7 +43,10 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "json",
+    "json-viewer",
+    "json-tree"
   ],
   "repository": {
     "type": "git",
