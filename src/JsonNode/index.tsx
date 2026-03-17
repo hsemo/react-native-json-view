@@ -137,6 +137,7 @@ const JsonView = ({
   themeName,
   indent,
   style,
+  ...props
 }: JsonViewProps) => {
   const [collapseMap, setCollapseMap] = useState<CollapseMap>({
     root: !!onlyCollapseRoot,
@@ -184,7 +185,7 @@ const JsonView = ({
   }, [collapsed, data]);
 
   return (
-    <ScrollView style={[styles.scrollView, style]}>
+    <ScrollView style={[styles.scrollView, style]} {...props}>
       <JsonNode
         data={data}
         collapseMap={collapseMap}
